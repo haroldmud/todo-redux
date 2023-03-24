@@ -10,11 +10,14 @@ const addSlice = createSlice({
     checked: (state, actions) => {
       state.value.tasks = actions.payload;
     },
-    deleting:(state, actions) => {
+    deleting: (state, actions) => {
+      state.value.tasks = actions.payload;
+    },
+    editing: (state, actions) => {
       state.value.tasks = actions.payload;
     },
   },
 });
 
-export const { generator, checked, deleting} = addSlice.actions;
+export const { generator, checked, deleting, editing } = addSlice.actions;
 export default addSlice.reducer;
