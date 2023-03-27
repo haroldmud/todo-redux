@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const addSlice = createSlice({
-  name: "add",
+  name: "task",
   initialState: { value: { tasks: [] } },
   reducers: {
     generator: (state, actions) => {
