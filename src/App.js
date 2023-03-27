@@ -65,7 +65,7 @@ export default function Home() {
                         onChange={(e)=>setNewItem(e.target.value)}
                         className="w-9/12 placeholder:text-gray-500  placeholder:italic placeholder:text-[0.7rem] bg-slate-400 outline-none pl-2 border-blue-500 z-10 "  type="text" />
                       <div>
-                      <button onClick={()=>{setEdit(null); setCheck(null); setNewItem("");console.log(newItem); changeItem(collection.id);}} className="my-auto"><BiCheck/></button>
+                      <button onClick={()=>{setEdit(null); setCheck(null); setNewItem(""); changeItem(collection.id);}} className="my-auto"><BiCheck/></button>
                       </div>
                     </div>
                     <div className="flex  justify-center gap-1">
